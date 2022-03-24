@@ -86,7 +86,10 @@ namespace Metoder_Opgave_7_9
         {
             for (int i = 0; i < arr.Length; i++)
             {
-                arr[i] = i + 1;
+                if (i + 1 % 2 == 0)
+                {
+                    arr[i] = i + 1;
+                }
             }
 
             return arr;
